@@ -6,42 +6,37 @@
 [root@localhost ~]# wget  http://softether.fishinfo.cn/files/softether/v4.27-9666-beta-2018.04.21-tree/Linux/SoftEther_VPN_Server/64bit_-_Intel_x64_or_AMD64/softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar.gz 
 
 ### 3、安装vpn
+    [root@localhost opt]# tar xf softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar_2.gz
+    [root@localhost ~]# cd vpnserver
+    [root@localhost vpnserver]# make
     
-[root@localhost opt]# tar xf softether-vpnserver-v4.27-9666-beta-2018.04.21-linux-x64-64bit.tar_2.gz
-[root@localhost ~]# cd vpnserver
-[root@localhost vpnserver]# make
-
+    Do you want to read the License Agreement for this software ?
     
+     1. Yes
+     2. No
     
-     
-Do you want to read the License Agreement for this software ?
-
- 1. Yes
- 2. No
-
-Please choose one of above number:
- 1            #选择1
-
-Did you read and understand the License Agreement ?
- (If you couldn't read above text, Please read 'ReadMeFirst_License.txt'
- file with any text editor.)
-
- 1. Yes
- 2. No
-
-Please choose one of above number:
- 1           #选择1
-
-Did you agree the License Agreement ?
-
- 1. Agree
- 2. Do Not Agree
-
-Please choose one of above number:
- 1          #选择1
-
-make[1]: Leaving directory `/opt/vpnserver'
-
+    Please choose one of above number:
+     1            #选择1
+    
+    Did you read and understand the License Agreement ?
+     (If you couldn't read above text, Please read 'ReadMeFirst_License.txt'
+     file with any text editor.)
+    
+     1. Yes
+     2. No
+    
+    Please choose one of above number:
+     1           #选择1
+    
+    Did you agree the License Agreement ?
+    
+     1. Agree
+     2. Do Not Agree
+    
+    Please choose one of above number:
+     1          #选择1
+    
+    make[1]: Leaving directory `/opt/vpnserver'
 ### 4、启动服务
 [root@localhost vpnserver]# ./vpnserver start
 [root@localhost vpnserver]# echo "/opt/vpnserver start" >> /etc/rc.local
