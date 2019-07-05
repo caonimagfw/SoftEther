@@ -1,3 +1,27 @@
+
+
+
+# 前言
+
+>如果你开启了SElinux，执行下面命令禁用SELinux：
+
+    sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
+
+下载最新SoftEther源码：http://www.softether-download.com/cn.aspx
+
+根据系统和CPU架构选择：
+ wget xxx
+解压：
+	
+    tar xzvf softether-vpnserver-v4.20-9608-rtm-2016.04.17-linux-x64-64bit.tar.gz -C /opt
+
+执行make：
+
+cd /opt/vpnserver/
+make
+
+
+
 ### 1、安装依懒软件
     [root@localhost ~]# yum -y install gcc zlib-devel openssl-devel readline-devel ncurses-devel
 
