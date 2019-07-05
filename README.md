@@ -88,7 +88,7 @@ VPN Server>exit
 开启NAT地址转换和DHCP服务
 
 
-##7、使用VPN client 连接
+### 7、使用VPN client 连接
 
 
 新建vpn连接和虚拟网卡
